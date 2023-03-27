@@ -5,7 +5,7 @@ import '@fontsource/julius-sans-one';
 import '@fontsource/alice';
 import './index.css';
 import { ChakraProvider } from '@chakra-ui/react';
-import theme from './CustomTheme/theme.jsx';
+import theme from './theme.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
