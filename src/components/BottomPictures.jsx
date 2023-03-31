@@ -1,6 +1,6 @@
 import { Box, Image, SimpleGrid } from '@chakra-ui/react';
 import pinkCocktail from '../assets/cocktailpink.jpg';
-import blueCocktail from '../assets/cocktailblue.jpg'
+import blueCocktail from '../assets/cocktailblue.jpg';
 
 const BottomPictures = () => {
   return (
