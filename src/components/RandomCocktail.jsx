@@ -6,9 +6,16 @@ const RandomCocktail = () => {
   const [isShown, setIsShown] = useState(false);
 
   useEffect(() => {
-    fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
+    const controller = new AbortController();
+    const signal = controller.signal;
+
+    fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php', { signal: signal })
       .then(response => response.json())
       .then(data => setDrink(data.drinks[0]));
+
+    return () => {
+      controller.abort();
+    };
   }, []);
 
   const ingredients = [drink.strAlcoholic, drink.strIngredient1];
