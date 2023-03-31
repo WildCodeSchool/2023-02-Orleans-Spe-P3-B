@@ -1,4 +1,3 @@
-import React from 'react';
 import { Menu, MenuButton, MenuItem, MenuList, Image, Text, MenuCommand, IconButton } from '@chakra-ui/react';
 import { NavLink } from 'react-router-dom';
 import { HamburgerIcon } from '@chakra-ui/icons';

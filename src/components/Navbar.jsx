@@ -1,4 +1,3 @@
-import React from 'react';
 import { Flex, TabIndicator, HStack, Image, Spacer, Tab, TabList, Tabs, Text } from '@chakra-ui/react';
 import { NavLink } from 'react-router-dom';
 import imgLogo from '../assets/images/logo.png';

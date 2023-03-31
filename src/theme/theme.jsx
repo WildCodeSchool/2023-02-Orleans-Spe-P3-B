@@ -1,4 +1,19 @@
 import { extendTheme } from '@chakra-ui/react';
+import { defineStyle, defineStyleConfig } from '@chakra-ui/react';
+
+const cardButton = defineStyle({
+  border: '1px solid',
+  borderColor: 'secondary.600',
+  color: 'secondary.600',
+  _hover: {
+    bg: 'secondary.600',
+    color: 'light.200',
+  },
+});
+
+const buttonTheme = defineStyleConfig({
+  variants: { cardButton },
+});
 
 const colors = {
   primary: {
@@ -9,6 +24,7 @@ const colors = {
     600: '#cc5b3c',
   },
   secondary: {
+    50: 'rgba(228, 104, 112, 0.5)',
     200: '#fd8f95',
     300: '#fd8188',
     400: '#FD737B',
@@ -23,6 +39,7 @@ const colors = {
     600: '#cb9258',
   },
   light: {
+    50: 'rgba(255, 255, 255, 0.4)',
     200: '#fff1e8',
     300: '#fff0e5',
     400: '#FFEEE2',
@@ -42,6 +59,15 @@ const fonts = {
   heading: `'Julius Sans One', sans-serif`,
   body: `'Alice', sans-serif`,
 };
-const theme = extendTheme({ colors, fonts });
+
+const styles = {
+  global: {
+    body: {
+      bgGradient: 'linear(to-b, #FF713D 0%, rgba(255, 91, 111, 0.83) 72.98%, #FFD166 100%)',
+      height: '100vh',
+    },
+  },
+};
+const theme = extendTheme({ styles, colors, fonts, components: { Button: buttonTheme } });
 
 export default theme;
