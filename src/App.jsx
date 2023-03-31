@@ -1,7 +1,12 @@
 import './App.css';
+import Introduction from './components/Introduction.jsx';
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Introduction />
+    </>
+  );
 }
 
 export default App;
