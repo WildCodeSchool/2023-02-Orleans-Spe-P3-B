@@ -1,5 +1,4 @@
-import { Box, Container } from '@chakra-ui/react';
-import React from 'react';
+import { Box } from '@chakra-ui/react';
 import BurgerMenu from './BurgerMenu';
 import Navbar from './Navbar';
 
@@ -9,7 +8,7 @@ function Header() {
       <Box>
         <Navbar />
       </Box>
-      <Box display={{ base: '0px', sm: 'flex', md: 'none', lg: 'none', xl: 'none' }}>
+      <Box display={{ base: 'flex', md: 'none' }}>
         <BurgerMenu />
       </Box>
     </>
