@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import CocktailsList from './pages/CocktailsList';
 import FindCocktail from './pages/FindCocktails';
 import About from './pages/About';
+import './App.css';
 
 function App() {
   return (

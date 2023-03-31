@@ -1,6 +1,7 @@
 import React from 'react';
 import { Flex, TabIndicator, HStack, Image, Spacer, Tab, TabList, Tabs, Text } from '@chakra-ui/react';
 import { NavLink } from 'react-router-dom';
+import imgLogo from '../assets/images/logo4.png';
 
 function Navbar() {
   return (
@@ -10,14 +11,14 @@ function Navbar() {
       color='primary.400'
       bg='light.200'
       m={6}
-      p='2px'
+      p='3px'
       paddingStart={8}
       paddingEnd={8}
       rounded='2xl'
       shadow='md'
       alignItems='center'
     >
-      <Image src={'src/assets/images/logo4.png'} me={5} boxSize='40px'></Image>
+      <Image src={imgLogo} me={5} boxSize='40px'></Image>
       <Text as='h1'>THE MIXER'S LOUNGE</Text>
       <Spacer />
       <Tabs position='relative' variant='unstyled'>
