@@ -1,4 +1,6 @@
 import { Box, Image, SimpleGrid } from '@chakra-ui/react';
+import pinkCocktail from '../assets/cocktailpink.jpg';
+import blueCocktail from '../assets/cocktailblue.jpg'
 
 const BottomPictures = () => {
   return (
@@ -10,7 +12,7 @@ const BottomPictures = () => {
           width='100%'
           objectFit='cover'
           align='50% 45%'
-          src='./src/assets/cocktailpink.jpg'
+          src={pinkCocktail}
           alt='picture of a cocktail'
         />
         <Image
@@ -19,7 +21,7 @@ const BottomPictures = () => {
           width='100%'
           objectFit='cover'
           align='50% 30%'
-          src='./src/assets/cocktailblue.jpg'
+          src={blueCocktail}
           alt='picture of a cocktail'
         />
       </SimpleGrid>
