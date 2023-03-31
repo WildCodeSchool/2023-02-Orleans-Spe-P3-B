@@ -1,10 +1,10 @@
 import './App.css';
-import Introduction from './components/Introduction.jsx';
+import Home from './pages/Home.jsx';
 
 function App() {
   return (
     <>
-      <Introduction />
+      <Home />
     </>
   );
 }
