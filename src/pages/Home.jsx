@@ -1,4 +1,3 @@
-import React from 'react';
 import RandomCocktailList from '../components/RandomCocktailList.jsx';
 import BottomPictures from '../components/BottomPictures.jsx';
 
