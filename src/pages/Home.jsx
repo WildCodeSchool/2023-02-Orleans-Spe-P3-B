@@ -4,7 +4,7 @@ import BottomPictures from '../components/BottomPictures.jsx';
 const Home = () => {
   return (
     <>
-      <RandomCocktailList />;
+      <RandomCocktailList />
       <BottomPictures />
     </>
   );

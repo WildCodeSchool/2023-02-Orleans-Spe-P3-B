@@ -1,4 +1,4 @@
-import { Flex, HStack, Spacer, Tab, TabList, Tabs, Text } from '@chakra-ui/react';
+import { Link, Flex, HStack, Spacer, Tab, TabList, Tabs, Text } from '@chakra-ui/react';
 
 function Footer() {
   return (
