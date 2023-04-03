@@ -5,7 +5,7 @@ import imgLogo from '../assets/images/logo.png';
 
 function BurgerMenu() {
   return (
-    <Menu shadow='md' color='secondary.400' bg='light.200' m='2'>
+    <Menu shadow='md'>
       <MenuButton
         shadow='md'
         color='secondary.400'
@@ -17,7 +17,7 @@ function BurgerMenu() {
         variant='unstyled'
       />
       <MenuList color='secondary.400' bg='light.200'>
-        <MenuCommand bg='light.200'>
+        <MenuCommand>
           <Image src={imgLogo} ms='2' boxSize='25px'></Image>
           <Text ms='3'>{"THE MIXER'S LOUNGE"}</Text>
         </MenuCommand>

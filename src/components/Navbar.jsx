@@ -6,11 +6,11 @@ function Navbar() {
   return (
     <Flex
       as='nav'
-      display={{ lg: 'flex', md: 'flex', sm: 'none', base: 'none' }}
       color='primary.400'
       bg='light.200'
       m={6}
       p='3px'
+      w={'100%'}
       paddingStart={8}
       paddingEnd={8}
       rounded='2xl'
