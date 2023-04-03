@@ -2,7 +2,7 @@ import { Box, Text, Link, ListItem, UnorderedList, Heading } from '@chakra-ui/re
 
 function LegalNotice() {
   return (
-    <Box m={5} p={5} color='primary.500' bg={'light.200'}>
+    <Box m={5} p={6} color='primary.500' bg={'light.200'} rounded='2xl'>
       <Text textAlign={['left', 'center']} />
       <Heading fontSize='3xl' as='b'>
         {"GDPR Privacy Policy for THE MIXER'S LOUNGE"}
