@@ -27,7 +27,7 @@ function Navbar() {
               <NavLink to='/'>{'Home'}</NavLink>
             </Tab>
             <Tab _selected={{ color: 'secondary.500' }}>
-              <NavLink to='/the-cocktails'>The Cocktails</NavLink>
+              <NavLink to='/the-cocktails'>{'The Cocktails'}</NavLink>
             </Tab>
             <Tab _selected={{ color: 'secondary.600' }}>
               <NavLink to='/find-your-cocktail'>{'Find Your Cocktail'}</NavLink>
