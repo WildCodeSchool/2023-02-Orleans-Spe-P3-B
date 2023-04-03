@@ -6,7 +6,7 @@ function Footer() {
       as='footer'
       display={{ base: 'flex' }}
       color='light.400'
-      bg='primary.400'
+      bg='primary.500'
       m={6}
       paddingStart={6}
       paddingEnd={2}
@@ -15,7 +15,7 @@ function Footer() {
       alignItems='center'
     >
       <Text as='h1' color={'light.600'}>
-        {'Made by: Mikael, Chloé et Violeta'}
+        {'Made by: Mikael, Chloé and Violeta'}
       </Text>
       <Spacer />
       <Tabs position='relative' variant='unstyled'>
