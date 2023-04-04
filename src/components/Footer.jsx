@@ -3,17 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 function Footer() {
   return (
-    <Flex
-      as='footer'
-      display={{ base: 'flex' }}
-      bg='primary.400'
-      m={6}
-      paddingStart={6}
-      paddingEnd={6}
-      rounded='2xl'
-      shadow='lg'
-      alignItems='center'
-    >
+    <Flex as='footer' bg='footer.200' m={6} mt={10} p={1} paddingStart={6} paddingEnd={6} rounded='2xl' shadow='lg' alignItems='center'>
       <Text as='h1' color={'light.500'}>
         {'Made by: Mikael, Chloé and Violeta'}
       </Text>
