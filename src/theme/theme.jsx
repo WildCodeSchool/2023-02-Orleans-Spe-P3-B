@@ -54,6 +54,9 @@ const colors = {
     500: '#424b54',
     600: '#3b444c',
   },
+  footer: {
+    200: '#e04646',
+  },
 };
 
 const fonts = {

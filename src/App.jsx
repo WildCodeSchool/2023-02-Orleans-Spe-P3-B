@@ -1,10 +1,12 @@
+import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import Home from './pages/Home';
 import CocktailsList from './pages/CocktailsList';
 import FindCocktail from './pages/FindCocktails';
 import About from './pages/About';
-import './App.css';
+import Home from './pages/Home.jsx';
+import Footer from './components/Footer.jsx';
+import LegalNotice from './components/LegalNotice';
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
         <Route path='/the-cocktails' element={<CocktailsList />} />
         <Route path='/find-your-cocktail' element={<FindCocktail />} />
         <Route path='/about' element={<About />} />
+        <Route path='/legal-notice' element={<LegalNotice />} />
       </Routes>
+      <Footer />
     </>
   );
 }
