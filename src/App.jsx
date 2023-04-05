@@ -1,7 +1,12 @@
 import './App.css';
+import SearchCocktail from './pages/SearchCocktail';
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <SearchCocktail />
+    </>
+  );
 }
 
 export default App;
