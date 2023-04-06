@@ -6,8 +6,8 @@ import Introduction from '../components/Introduction.jsx';
 const Home = () => {
   return (
     <>
-      <SearchSection />
       <Introduction />
+      <SearchSection />
       <RandomCocktailList />;
       <BottomPictures />
     </>
