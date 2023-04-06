@@ -1,10 +1,10 @@
 import './App.css';
-import SearchCocktail from './pages/SearchCocktail';
+import Home from './pages/Home.jsx';
 
 function App() {
   return (
     <>
-      <SearchCocktail />
+      <Home />
     </>
   );
 }
