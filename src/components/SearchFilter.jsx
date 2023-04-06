@@ -1,4 +1,4 @@
-import { FormLabel, Select, Box, SimpleGrid, Image } from '@chakra-ui/react';
+import { FormLabel, Select, Box, SimpleGrid, Image, Center, Heading } from '@chakra-ui/react';
 import { useContext } from 'react';
 import FilterSearchContext from '../contexts/FilterSearchContext.jsx';
 
@@ -47,10 +47,21 @@ const SearchFilter = () => {
   const handleSelectGlass = e => setGlass(e.target.value);
 
   return (
-    <>
-      <SimpleGrid minChildWidth='120px' spacing='20px'>
-        <Box height='10rem' display='flex' flexDirection='column' alignItems='center'>
-          <Image boxSize='200px' src='./src/assets/images/ingredient2-icon.png' alt='Dan Abramov' fill='white' />
+    <Box bg='primary.200' h={{ lg: '22rem', md: '32rem', sm: '34rem' }} px={{ md: '5rem', sm: '0rem' }} borderRadius='10px' w='90'>
+      <Center>
+        <Heading as='h2' size='lg' pb={{ md: '20px', sm: '2px' }} pt='2rem' fontSize={'clamp(1.5em, 2vw, 3em)'}>
+          {'Search with a filter'}
+        </Heading>
+      </Center>
+      <SimpleGrid columns={{ sm: '1', md: '2', lg: '4' }} spacing={{ lg: '20px', md: '20px', sm: '0px' }}>
+        <Box height={{ lg: '10rem', md: '12rem', sm: '0rem' }} display='flex' flexDirection='column' alignItems='center'>
+          <Image
+            display={{ base: 'none', md: 'block' }}
+            boxSize='100px'
+            src='./src/assets/images/ingredient2-icon.png'
+            alt='Icon of the ingredient'
+            fill='white'
+          />
           <FormLabel mt={4}>Ingredient</FormLabel>
           <Select
             bg='rgba(255, 255, 255, 0.32)'
@@ -67,8 +78,13 @@ const SearchFilter = () => {
             })}
           </Select>
         </Box>
-        <Box height='10rem' display='flex' flexDirection='column' alignItems='center'>
-          <Image boxSize='200px' src='./src/assets/images/alcoholic-icon.png' alt='Dan Abramov' />
+        <Box height={{ md: '10rem', sm: '0rem' }} display='flex' flexDirection='column' alignItems='center'>
+          <Image
+            display={{ base: 'none', md: 'block' }}
+            boxSize='100px'
+            src='./src/assets/images/alcoholic-icon.png'
+            alt='Icon of the alcoholic or not'
+          />
           <FormLabel mt={4}>Alcoholic</FormLabel>
           <Select
             onChange={handleSelectIsAlcoholic}
@@ -80,8 +96,13 @@ const SearchFilter = () => {
             <option value='Non_Alcoholic'>No</option>
           </Select>
         </Box>
-        <Box height='10rem' display='flex' flexDirection='column' alignItems='center'>
-          <Image boxSize='200px' src='./src/assets/images/cocktail.png' alt='Dan Abramov' />
+        <Box height={{ md: '10rem', sm: '0rem' }} display='flex' flexDirection='column' alignItems='center'>
+          <Image
+            display={{ base: 'none', md: 'block' }}
+            boxSize='100px'
+            src='./src/assets/images/cocktail.png'
+            alt='Icon of the Category'
+          />
           <FormLabel mt={4}>Category</FormLabel>
           <Select
             onChange={handleSelectCategory}
@@ -98,8 +119,13 @@ const SearchFilter = () => {
             })}
           </Select>
         </Box>
-        <Box height='10rem' display='flex' flexDirection='column' alignItems='center'>
-          <Image boxSize='200px' src='./src/assets/images/martini-glass.png' alt='Dan Abramov' />
+        <Box height={{ md: '10rem', sm: '0rem' }} display='flex' flexDirection='column' alignItems='center' pb='1rem'>
+          <Image
+            display={{ base: 'none', md: 'block' }}
+            boxSize='100px'
+            src='./src/assets/images/martini-glass.png'
+            alt='Icon of the type of glass'
+          />
           <FormLabel mt={4}>Glass</FormLabel>
           <Select
             onChange={handleSelectGlass}
@@ -117,7 +143,7 @@ const SearchFilter = () => {
           </Select>
         </Box>
       </SimpleGrid>
-    </>
+    </Box>
   );
 };
 

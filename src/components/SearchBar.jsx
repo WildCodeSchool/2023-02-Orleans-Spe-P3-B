@@ -14,8 +14,8 @@ const SearchBar = () => {
   return (
     <>
       <Center>
-        <Heading as='h2' size='lg' paddingBlockStart={70}>
-          Search Your Cocktail
+        <Heading fontSize={'clamp(1.5em, 2vw, 3em)'} as='h1' size='lg' paddingBlockStart={70} pb={10}>
+          {'Search Your Cocktail'}
         </Heading>
       </Center>
 
@@ -23,8 +23,11 @@ const SearchBar = () => {
         <FormControl>
           <Box display='flex' flexDirection='column'>
             <Center>
-              <FormLabel textCenter>Search a cocktail</FormLabel>
-
+              <Center>
+                <FormLabel mb='auto' display={{ base: 'none', lg: 'block' }}>
+                  {'Search a cocktail'}
+                </FormLabel>
+              </Center>
               <Input
                 value={search}
                 onChange={handleChange}
@@ -33,6 +36,7 @@ const SearchBar = () => {
                 border='1px solid rgba(255, 255, 255, 1)'
                 type='text'
                 placeholder='Enter the name of a cocktail'
+                mx='1rem'
               />
             </Center>
           </Box>
