@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Card, CardBody, Button, Heading, Stack, Image, HStack, Tag, TagLabel, Container, Collapse, Center } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 
 const RandomCocktail = () => {
   const [drink, setDrink] = useState('');
@@ -64,7 +65,7 @@ const RandomCocktail = () => {
               </Center>
               <Center>
                 <Button size='sm' mt={2} width='75%' variant='cardButton'>
-                  Have a look
+                  <Link to='/description/:cocktail'>Have a look</Link>
                 </Button>
               </Center>
             </Stack>

@@ -7,6 +7,7 @@ import About from './pages/About';
 import Home from './pages/Home.jsx';
 import Footer from './components/Footer.jsx';
 import LegalNotice from './components/LegalNotice';
+import DescriptionCocktail from './components/DescriptionCocktail';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/find-your-cocktail' element={<FindCocktail />} />
         <Route path='/about' element={<About />} />
         <Route path='/legal-notice' element={<LegalNotice />} />
+        <Route path='/description/:cocktail' element={<DescriptionCocktail />} />
       </Routes>
       <Footer />
     </>
