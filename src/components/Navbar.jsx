@@ -30,7 +30,7 @@ function Navbar() {
               <NavLink to='/the-cocktails'>{'The Cocktails'}</NavLink>
             </Tab>
             <Tab _selected={{ color: 'secondary.600' }}>
-              <NavLink to='/find-your-cocktail'>{'Find Your Cocktail'}</NavLink>
+              <NavLink to='/discover-a-cocktail'>{'Discover a Cocktail'}</NavLink>
             </Tab>
             <Tab _selected={{ color: 'secondary.600' }}>
               <NavLink to='/about'>{'About'}</NavLink>
