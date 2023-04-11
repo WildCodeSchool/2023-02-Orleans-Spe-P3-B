@@ -1,6 +1,6 @@
 import { createContext, useState } from 'react';
 
-const FilterSearchContext = createContext('');
+const FilterSearchContext = createContext();
 
 const FilterSearchProvider = ({ children }) => {
   const [ingredient, setIngredient] = useState('');

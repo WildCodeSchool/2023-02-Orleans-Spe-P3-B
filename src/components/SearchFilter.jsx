@@ -47,14 +47,14 @@ const SearchFilter = () => {
   const handleSelectGlass = e => setGlass(e.target.value);
 
   return (
-    <Box bg='primary.200' h={{ lg: '22rem', md: '32rem', sm: '34rem' }} px={{ md: '5rem', sm: '0rem' }} borderRadius='10px' w='90'>
+    <Box bg='primary.200' h={{ lg: '22rem', md: '32rem', sm: '34rem' }} px={{ md: '5rem', sm: '2rem' }} borderRadius='10px' w='90'>
       <Center>
-        <Heading as='h2' size='lg' pb={{ md: '20px', sm: '2px' }} pt='2rem' fontSize={'clamp(1.5em, 2vw, 3em)'}>
+        <Heading as='h2' size='lg' pb={{ md: '20px', sm: '2px' }} pt='1rem' fontSize={'clamp(1.5em, 2vw, 3em)'}>
           {'Search with a filter'}
         </Heading>
       </Center>
-      <SimpleGrid columns={{ sm: '1', md: '2', lg: '4' }} spacing={{ lg: '20px', md: '20px', sm: '0px' }}>
-        <Box height={{ lg: '10rem', md: '12rem', sm: '0rem' }} display='flex' flexDirection='column' alignItems='center'>
+      <SimpleGrid columns={{ sm: '1', md: '2', lg: '4' }} spacing={{ lg: '20px', md: '20px', sm: '10px' }} px='1rem'>
+        <Box height={{ lg: '10rem', md: '12rem', sm: '5rem' }} display='flex' flexDirection='column' alignItems='center'>
           <Image
             display={{ base: 'none', md: 'block' }}
             boxSize='100px'
@@ -62,7 +62,7 @@ const SearchFilter = () => {
             alt='Icon of the ingredient'
             fill='white'
           />
-          <FormLabel mt={4}>Ingredient</FormLabel>
+          <FormLabel mt={4}>{'Ingredient'}</FormLabel>
           <Select
             bg='rgba(255, 255, 255, 0.32)'
             border='1px solid rgba(255, 255, 255, 1)'
@@ -78,32 +78,32 @@ const SearchFilter = () => {
             })}
           </Select>
         </Box>
-        <Box height={{ md: '10rem', sm: '0rem' }} display='flex' flexDirection='column' alignItems='center'>
+        <Box height={{ md: '10rem', sm: '5rem' }} display='flex' flexDirection='column' alignItems='center'>
           <Image
             display={{ base: 'none', md: 'block' }}
             boxSize='100px'
             src='./src/assets/images/alcoholic-icon.png'
             alt='Icon of the alcoholic or not'
           />
-          <FormLabel mt={4}>Alcoholic</FormLabel>
+          <FormLabel mt={4}>{'Alcoholic'}</FormLabel>
           <Select
             onChange={handleSelectIsAlcoholic}
             bg='rgba(255, 255, 255, 0.32)'
             border='1px solid rgba(255, 255, 255, 1)'
-            placeholder='Yes or Not'
+            placeholder='Yes or No'
           >
             <option value='Alcoholic'>Yes</option>
             <option value='Non_Alcoholic'>No</option>
           </Select>
         </Box>
-        <Box height={{ md: '10rem', sm: '0rem' }} display='flex' flexDirection='column' alignItems='center'>
+        <Box height={{ md: '10rem', sm: '5rem' }} display='flex' flexDirection='column' alignItems='center'>
           <Image
             display={{ base: 'none', md: 'block' }}
             boxSize='100px'
             src='./src/assets/images/cocktail.png'
             alt='Icon of the Category'
           />
-          <FormLabel mt={4}>Category</FormLabel>
+          <FormLabel mt={4}>{'Category'}</FormLabel>
           <Select
             onChange={handleSelectCategory}
             bg='rgba(255, 255, 255, 0.32)'
@@ -119,14 +119,14 @@ const SearchFilter = () => {
             })}
           </Select>
         </Box>
-        <Box height={{ md: '10rem', sm: '0rem' }} display='flex' flexDirection='column' alignItems='center' pb='1rem'>
+        <Box height={{ md: '10rem', sm: '0rem' }} display='flex' flexDirection='column' alignItems='center' pb='2rem'>
           <Image
             display={{ base: 'none', md: 'block' }}
             boxSize='100px'
             src='./src/assets/images/martini-glass.png'
             alt='Icon of the type of glass'
           />
-          <FormLabel mt={4}>Glass</FormLabel>
+          <FormLabel mt={4}>{'Glass'}</FormLabel>
           <Select
             onChange={handleSelectGlass}
             bg='rgba(255, 255, 255, 0.32)'

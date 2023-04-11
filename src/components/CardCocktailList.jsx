@@ -1,22 +1,23 @@
-import { Button, Card, CardBody, Center, Collapse, Container, Heading, HStack, Stack, Tag, TagLabel, Image } from '@chakra-ui/react';
+import { Button, Card, CardBody, Center, Collapse, Container, Heading, HStack, Stack, Tag, TagLabel, Image, Box } from '@chakra-ui/react';
 import { useState } from 'react';
 
-const CardCocktailList = ({ strDrink, strAlcoholic, strIngredient1, strDrinkThumb }) => {
+const CardCocktailList = ({ strDrink, strDrinkThumb }) => {
   const [isShown, setIsShown] = useState(false);
-  const ingredients = [strAlcoholic, strIngredient1];
   return (
-    <div>
+    <Box>
       <Card
+        role='group'
         onMouseEnter={() => setIsShown(true)}
         onMouseLeave={() => setIsShown(false)}
         bg='light.50'
         backdropFilter='saturate(200%)'
         margin='0.5rem'
       >
-        <CardBody maxWidth='280px' padding='0'>
+        <CardBody maxWidth='16rem' padding='0'>
           <Image borderRadius='lg' src={strDrinkThumb} alt={strDrink} zIndex={1} filter='auto' brightness='95%' padding='8px' />
           <Container
-            display={isShown ? 'none' : 'flex'}
+            display={'flex'}
+            _groupHover={{ display: 'none' }}
             width='94%'
             height='25%'
             paddingTop='13%'
@@ -26,7 +27,15 @@ const CardCocktailList = ({ strDrink, strAlcoholic, strIngredient1, strDrinkThum
             left='3%'
             justifyContent='center'
           >
-            <Heading as='h2' fontSize='1.2rem' maxWidth='100%' noOfLines={1} display={isShown ? 'none' : 'initial'} color='light.200'>
+            <Heading
+              as='h2'
+              fontSize='1.2rem'
+              maxWidth='100%'
+              noOfLines={1}
+              display={'flex'}
+              _groupHover={{ display: 'none' }}
+              color='light.200'
+            >
               {strDrink}
             </Heading>
           </Container>
@@ -38,15 +47,6 @@ const CardCocktailList = ({ strDrink, strAlcoholic, strIngredient1, strDrinkThum
                 </Heading>
               </Center>
               <Center>
-                <HStack spacing={4}>
-                  {ingredients.map((ingredient, index) => (
-                    <Tag size='md' key={index} bg='secondary.50' opacity={0.8}>
-                      <TagLabel color='light.200'>{ingredient}</TagLabel>
-                    </Tag>
-                  ))}
-                </HStack>
-              </Center>
-              <Center>
                 <Button size='sm' mt={2} width='75%' variant='cardButton'>
                   {'Have a look'}
                 </Button>
@@ -55,7 +55,7 @@ const CardCocktailList = ({ strDrink, strAlcoholic, strIngredient1, strDrinkThum
           </Collapse>
         </CardBody>
       </Card>
-    </div>
+    </Box>
   );
 };
 

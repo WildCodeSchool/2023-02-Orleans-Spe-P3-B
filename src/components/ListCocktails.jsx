@@ -10,16 +10,10 @@ const ListCocktails = () => {
   const { ingredient, isAlcoholic, category, glass } = useContext(FilterSearchContext);
   const { setCocktails, cocktails } = useContext(CocktailListContext);
 
-  const urlSearch = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=' + search;
-  const urlIngredient = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=' + ingredient;
-  const urlIsAlcoholic = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=' + isAlcoholic;
-  const urlCategory = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=' + category;
-  const urlGlass = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?g=' + glass;
-
   useEffect(() => {
     const abortController = new AbortController();
 
-    fetch(urlSearch, {
+    fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${search}`, {
       signal: abortController.signal,
     })
       .then(res => res.json())
@@ -27,10 +21,11 @@ const ListCocktails = () => {
     return () => {
       abortController.abort();
     };
-  }, [urlSearch, setCocktails]);
+  }, [search, setCocktails]);
+
   useEffect(() => {
     const abortController = new AbortController();
-    fetch(urlIngredient, {
+    fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${ingredient}`, {
       signal: abortController.signal,
     })
       .then(res => res.json())
@@ -38,10 +33,11 @@ const ListCocktails = () => {
     return () => {
       abortController.abort();
     };
-  }, [urlIngredient, setCocktails]);
+  }, [ingredient, setCocktails]);
+
   useEffect(() => {
     const abortController = new AbortController();
-    fetch(urlIsAlcoholic, {
+    fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=${isAlcoholic}`, {
       signal: abortController.signal,
     })
       .then(res => res.json())
@@ -49,10 +45,11 @@ const ListCocktails = () => {
     return () => {
       abortController.abort();
     };
-  }, [urlIsAlcoholic, setCocktails]);
+  }, [isAlcoholic, setCocktails]);
+
   useEffect(() => {
     const abortController = new AbortController();
-    fetch(urlCategory, {
+    fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=${category}`, {
       signal: abortController.signal,
     })
       .then(res => res.json())
@@ -60,10 +57,11 @@ const ListCocktails = () => {
     return () => {
       abortController.abort();
     };
-  }, [urlCategory, setCocktails]);
+  }, [category, setCocktails]);
+
   useEffect(() => {
     const abortController = new AbortController();
-    fetch(urlGlass, {
+    fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?g=${glass}`, {
       signal: abortController.signal,
     })
       .then(res => res.json())
@@ -71,12 +69,12 @@ const ListCocktails = () => {
     return () => {
       abortController.abort();
     };
-  }, [urlGlass, setCocktails]);
+  }, [glass, setCocktails]);
 
   return (
-    <Box>
+    <Box maxW={{ sm: '18rem', md: '50rem', lg: '100%' }}>
       {cocktails ? (
-        <Flex wrap='wrap' flexDirection={{ sm: 'column', md: 'row' }} justifyContent='center'>
+        <Flex wrap='wrap' flexDirection={{ sm: 'column', md: 'row', lg: 'row' }} justifyContent='center'>
           {cocktails.map(drink => (
             <CardCocktailList {...drink} key={drink.idDrink} />
           ))}

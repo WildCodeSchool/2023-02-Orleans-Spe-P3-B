@@ -13,7 +13,7 @@ const SearchCocktail = () => {
         <FilterSearchProvider>
           <Box bg='light.300' h='100vh' pt={20}>
             <Container maxW='full'>
-              <Grid h='700px' templateRows='repeat(3, 1fr)' templateColumns={{ sm: '1fr', md: 'repeat(5, 1fr)' }}>
+              <Grid h='700px' templateRows='repeat(3, 1fr)' templateColumns={{ sm: '1fr', lg: 'repeat(5, 1fr)' }}>
                 <GridItem display={{ base: 'none', md: 'block' }} rowSpan={2} colSpan={2} borderLeftRadius='5'>
                   <Image
                     display={{ base: 'none', md: 'block' }}
@@ -27,8 +27,8 @@ const SearchCocktail = () => {
                 <GridItem colSpan={3} rowSpan={1} bg='primary.400' borderTopRightRadius='5'>
                   <SearchBar />
                 </GridItem>
-                <GridItem colSpan={3} rowSpan={1} bg='primary.400' borderBottomRightRadius='5'>
-                  <Container maxW='50rem' h='39rem' pt={{ base: '100', md: '100', sm: '0' }}>
+                <GridItem colSpan={3} rowSpan={1} bg='primary.400' borderBottomRightRadius='5' pb='2rem'>
+                  <Container maxW='50rem' maxH='39rem' pt={{ base: '10rem', md: '5rem', sm: '5rem' }}>
                     <SearchFilter />
                   </Container>
                 </GridItem>
@@ -36,7 +36,7 @@ const SearchCocktail = () => {
             </Container>
             <CocktailsListProvider>
               <Box bg='light.300'>
-                <Container maxW='100vw' pt='10rem'>
+                <Container maxW={{ sm: '50%', md: '50%', lg: '100%' }} pt='10rem'>
                   <ListCocktails />
                 </Container>
               </Box>
