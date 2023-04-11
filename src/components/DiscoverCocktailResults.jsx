@@ -4,8 +4,8 @@ import { Box, Button, Container, Flex, Heading, HStack, Image, Tag, TagLabel, Te
 
 const DiscoverCocktailResults = () => {
   const { cocktailId } = useParams();
-  let [drink, setDrink] = useState('');
-  let [ingredients, setIngredients] = useState([]);
+  const [drink, setDrink] = useState('');
+  const [ingredients, setIngredients] = useState([]);
   const navigate = useNavigate();
 
   const handleClick = () => {

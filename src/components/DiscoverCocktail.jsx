@@ -1,10 +1,10 @@
 import { Box, Button, Container, Flex, Heading, Image, List, ListItem, SimpleGrid, Spacer, Text } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
-import imageOne from '../assets/images/cocktailpinktransparent.png';
+import imageOne from '../assets/images/cocktail-pink-transparent.png';
 import { useNavigate } from 'react-router-dom';
 
 const DiscoverCocktail = () => {
-  let [drink, setDrink] = useState('');
+  const [drink, setDrink] = useState('');
   const [selectedAnswer, setSelectedAnswer] = useState('');
   const [answer, setAnswer] = useState('');
   const navigate = useNavigate();
@@ -27,21 +27,21 @@ const DiscoverCocktail = () => {
     }
   };
 
-  if (parseInt(answer) === 0) {
-    searchUrl += 'filter.php?a=Alcoholic';
-    randomNumber = Math.floor(Math.random() * 100);
-  } else if (parseInt(answer) === 1) {
-    searchUrl += 'filter.php?a=Non_alcoholic';
-    randomNumber = Math.floor(Math.random() * 100);
-  } else {
-    searchUrl += 'random.php';
-  }
-
   useEffect(() => {
     const controller = new AbortController();
     const signal = controller.signal;
 
     if (answer || parseInt(answer) === 0) {
+      if (parseInt(answer) === 0) {
+        searchUrl += 'filter.php?a=Alcoholic';
+        randomNumber = Math.floor(Math.random() * 100);
+      } else if (parseInt(answer) === 1) {
+        searchUrl += 'filter.php?a=Non_alcoholic';
+        randomNumber = Math.floor(Math.random() * 100);
+      } else {
+        searchUrl += 'random.php';
+      }
+
       fetch(searchUrl, { signal: signal })
         .then(response => response.json())
         .then(data => setDrink(data.drinks[randomNumber]));
