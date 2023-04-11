@@ -11,8 +11,19 @@ const cardButton = defineStyle({
   },
 });
 
+const quizSectionButton = defineStyle({
+  border: '1px solid',
+  borderColor: 'light.50',
+  color: 'secondary.700',
+  bg: 'light.50',
+  _hover: {
+    bg: 'secondary.600',
+    color: 'light.200',
+  },
+});
+
 const buttonTheme = defineStyleConfig({
-  variants: { cardButton },
+  variants: { cardButton, quizSectionButton },
 });
 
 const colors = {

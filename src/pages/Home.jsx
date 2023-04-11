@@ -1,12 +1,14 @@
 import RandomCocktailList from '../components/RandomCocktailList.jsx';
 import BottomPictures from '../components/BottomPictures.jsx';
 import Introduction from '../components/Introduction.jsx';
+import QuizHomeSection from '../components/QuizHomeSection.jsx';
 
 const Home = () => {
   return (
     <>
       <Introduction />
-      <RandomCocktailList />;
+      <RandomCocktailList />
+      <QuizHomeSection />
       <BottomPictures />
     </>
   );
