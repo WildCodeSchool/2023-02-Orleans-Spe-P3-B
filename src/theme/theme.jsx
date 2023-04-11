@@ -66,9 +66,12 @@ const fonts = {
 
 const styles = {
   global: {
+    html: {
+      height: '100%',
+    },
     body: {
       bgGradient: 'linear(to-b, #FF713D 0%, rgba(255, 91, 111, 0.83) 72.98%, #FFD166 100%)',
-      height: '100vh',
+      backgroundAttachment: 'fixed',
     },
   },
 };
