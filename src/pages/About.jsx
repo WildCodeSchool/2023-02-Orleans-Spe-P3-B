@@ -1,7 +1,7 @@
 import { Box, Button, Center, Container, Flex, Grid, GridItem, Heading, Image, Link, LinkBox, LinkOverlay, Text } from '@chakra-ui/react';
-import cocktail from '/src/assets/images/cocktail-pink.jpeg';
-import githubLogo from '/src/assets/images/github-mark.svg';
-import cocktailDbLogo from '/src/assets/images/logo-cocktail-api.png';
+import cocktail from '../assets/images/cocktail-pink.jpeg';
+import githubLogo from '../assets/images/github-mark.svg';
+import cocktailDbLogo from '../assets/images/logo-cocktail-api.png';
 
 const About = () => {
   return (
