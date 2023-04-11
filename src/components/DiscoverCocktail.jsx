@@ -8,8 +8,6 @@ const DiscoverCocktail = () => {
   const [selectedAnswer, setSelectedAnswer] = useState('');
   const [answer, setAnswer] = useState('');
   const navigate = useNavigate();
-  let searchUrl = 'https://www.thecocktaildb.com/api/json/v1/1/';
-  let randomNumber = 0;
   const quizz = {
     question: 'What do you truly want ?',
     choices: ['To get smashed', `I'm Sam`, `I haven't decided yet`],
@@ -32,6 +30,8 @@ const DiscoverCocktail = () => {
     const signal = controller.signal;
 
     if (answer || parseInt(answer) === 0) {
+      let searchUrl = 'https://www.thecocktaildb.com/api/json/v1/1/';
+      let randomNumber = 0;
       if (parseInt(answer) === 0) {
         searchUrl += 'filter.php?a=Alcoholic';
         randomNumber = Math.floor(Math.random() * 100);
