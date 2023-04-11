@@ -10,7 +10,7 @@ const About = () => {
         <GridItem display={{ base: 'none', lg: 'block' }} colSpan={1} borderLeftRadius='5px'>
           <Image display={{ base: 'none', lg: 'block' }} src={cocktail} boxSize='80rem' borderLeftRadius='5px' />
         </GridItem>
-        <GridItem colSpan={1} bg='papayawhip' borderLeftRadius={{ base: '5px', lg: '0px' }} borderRightRadius='5px'>
+        <GridItem colSpan={1} bg='light.400' borderLeftRadius={{ base: '5px', lg: '0px' }} borderRightRadius='5px'>
           <Flex direction='column'>
             <Center>
               <Heading as='h1' pt='10rem'>
@@ -22,12 +22,12 @@ const About = () => {
             <Box mx='2rem' pt='8rem'>
               <Text>
                 {
-                  "The Mixer's Lounge est un site permettant la recherche de cocktails, mais aussi, il permet de se faire surprendre par le choix d'un cocktail au hasard de la vie. Le hasard de la vie est incroyable, est renferme bien des surprises alors laissez vous porter. Je ne sais plus quoi écrire et du coup il y n'y a pas de raison de continuer à lire, alors il faut arrêter maintenant il n'y a vraiment plus rien à lire d'intéressant. Vraiment. Stop. C'est fini."
+                  "The Mixer's Lounge is a site who you can research cocktails, but also, be surprised by the choice of a cocktail you don't even know yet. The chances to find a new cocktail who will suit you are incredible, so let yourself be carried away. I don't know what to write anymore and there is no reason to continue reading, so you have to stop reading, there is really nothing more interesting to read. Really. Stop. It's over."
                 }
               </Text>
               <Box pt='15rem'>
                 <Center>
-                  <Text>{'Un site créer par :'}</Text>
+                  <Text>{'A site created by :'}</Text>
                 </Center>
                 <Center>
                   <Box pt='1rem'>
@@ -82,7 +82,7 @@ const About = () => {
                       </Button>
                     </Flex>
                     <Center>
-                      <Text pt='5rem'>{'Réaliser avec :'}</Text>
+                      <Text pt='5rem'>{'With the use of  :'}</Text>
                     </Center>
                     <Center>
                       <LinkBox>
