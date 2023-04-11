@@ -26,7 +26,7 @@ const About = () => {
               <Box mx='2rem' pt='8rem'>
                 <Text>
                   {
-                    "The Mixer's Lounge est un site permettant la recherche de cocktails, mais aussi, il permet de se faire surprendre par le choix d'un cocktail au hasard de la vie. Le hasard de la vie est incroyable, est renferme bien des surprises alors laissez vous porté. Je ne sais plus quoi écrire et du coup il y n'y a pas de raison de continuer à lire, alors il faut arrêter maintenant il n'y a vraiment plus rien à lire d'intéressant. Vraiment. Stop. C'est fini."
+                    "The Mixer's Lounge est un site permettant la recherche de cocktails, mais aussi, il permet de se faire surprendre par le choix d'un cocktail au hasard de la vie. Le hasard de la vie est incroyable, est renferme bien des surprises alors laissez vous porter. Je ne sais plus quoi écrire et du coup il y n'y a pas de raison de continuer à lire, alors il faut arrêter maintenant il n'y a vraiment plus rien à lire d'intéressant. Vraiment. Stop. C'est fini."
                   }
                 </Text>
                 <Box pt='15rem'>
