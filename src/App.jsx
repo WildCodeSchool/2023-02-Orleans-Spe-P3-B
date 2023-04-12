@@ -1,6 +1,5 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import CocktailsList from './pages/CocktailsList';
 import DiscoverCocktail from './pages/DiscoverCocktail.jsx';
 import About from './pages/About';
 import Home from './pages/Home.jsx';
@@ -10,6 +9,7 @@ import WithoutNavBar from './WithoutNavBar.jsx';
 import WithNavBar from './WithNavBar.jsx';
 import DescriptionCocktail from './components/DescriptionCocktail';
 import DiscoverCocktailResults from './pages/DiscoverCocktailResults.jsx';
+import SearchCocktail from './pages/SearchCocktail.jsx';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         </Route>
         <Route element={<WithNavBar />}>
           <Route path='/home' element={<Home />} />
-          <Route path='/the-cocktails' element={<CocktailsList />} />
+          <Route path='/the-cocktails' element={<SearchCocktail />} />
           <Route path='/about' element={<About />} />
           <Route path='/legal-notice' element={<LegalNotice />} />
           <Route path='/description/:drinkId' element={<DescriptionCocktail />} />
