@@ -1,13 +1,14 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import CocktailsList from './pages/CocktailsList';
-import FindCocktail from './pages/FindCocktails';
+import DiscoverCocktail from './pages/DiscoverCocktail.jsx';
 import About from './pages/About';
 import Home from './pages/Home.jsx';
 import LegalNotice from './components/LegalNotice';
 import Landing from './pages/Landing.jsx';
 import WithoutNavBar from './WithoutNavBar.jsx';
 import WithNavBar from './WithNavBar.jsx';
+import DiscoverCocktailResults from './pages/DiscoverCocktailResults.jsx';
 
 function App() {
   return (
