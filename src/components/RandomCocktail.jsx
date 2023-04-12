@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 const RandomCocktail = () => {
   const [drink, setDrink] = useState('');
   const [isShown, setIsShown] = useState(false);
-
   useEffect(() => {
     const controller = new AbortController();
     const signal = controller.signal;
@@ -20,10 +19,9 @@ const RandomCocktail = () => {
   }, []);
 
   const ingredients = [drink.strAlcoholic, drink.strIngredient1];
-  const cocktailDetail = e => {
-    setSelectedCocktailDetails(e.target.value);
-  };
-
+  /*  const cocktailDetail = () => {
+    setDrinkId(drink.idDrink);
+  };*/
   return (
     <div>
       <Card
@@ -67,8 +65,8 @@ const RandomCocktail = () => {
                 </HStack>
               </Center>
               <Center>
-                <Button size='sm' mt={2} width='75%' variant='cardButton' id='cocktailDetail' onClick={cocktailDetail}>
-                  <Link to={'/description/${cocktail.id}'}>{'Have a look'}</Link>
+                <Button size='sm' mt={2} width='75%' variant='cardButton' id='cocktailDetail'>
+                  <Link to={`/description/${drink.idDrink}`}>{'Have a look'}</Link>
                 </Button>
               </Center>
             </Stack>

@@ -5,13 +5,13 @@ import { useParams } from 'react-router-dom';
 const DescriptionCocktail = () => {
   const [cocktail, setCocktail] = useState(null);
   const params = useParams();
-
+  let { drinkId } = useParams();
   useEffect(() => {
-    if (params.id) {
-      fetch('www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11007')
+    console.log('***', drinkId);
+    if (drinkId) {
+      fetch(`https:\\www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${drinkId}`)
         .then(response => response.json())
-        .then(data => data.find(c => c.id === +params.id))
-        .then(data => setCocktail(data));
+        .then(data => setCocktail(data.drinks[0]));
     }
   }, [params]);
   if (!cocktail) return null;
@@ -23,20 +23,21 @@ const DescriptionCocktail = () => {
           <Box justify='center' as='b' p={'4'} position='relative'>
             <Stack divider={<StackDivider />}>
               <Heading fontSize={'4xl'} mt={'5'} mb={'5'} color={'secondary.600'}>
-                {/* {drink.strDrink} */}
+                {cocktail.strDrink}
               </Heading>
               <Spacer />
             </Stack>
-            {cocktail.map(cocktail => (
+            {/* {cocktail.map(cocktail => (
               <UnorderedList mt={'2'} color={'secondary.600'} key={index}>
                 <ListItem as='b' fontSize='xl'>
-                  {/* * {cocktail} */}
+                  {cocktail}
                 </ListItem>
               </UnorderedList>
-            ))}
+            ))}*/}
             <Spacer />
             <Text fontSize='2xl' color={'secondary.600'} mt={'6'} mb={'5'}>
-              Ingredients :
+              {'Ingredients :'}
+              {cocktail.strIngredient1}
             </Text>
             <Spacer />
 

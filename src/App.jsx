@@ -19,7 +19,7 @@ function App() {
         <Route path='/find-your-cocktail' element={<FindCocktail />} />
         <Route path='/about' element={<About />} />
         <Route path='/legal-notice' element={<LegalNotice />} />
-        <Route path='/description/:id' element={<DescriptionCocktail />} />
+        <Route path='/description/:drinkId' element={<DescriptionCocktail />} />
       </Routes>
       <Footer />
     </>
