@@ -7,9 +7,9 @@ import LegalNotice from './components/LegalNotice';
 import Landing from './pages/Landing.jsx';
 import WithoutNavBar from './WithoutNavBar.jsx';
 import WithNavBar from './WithNavBar.jsx';
-import DescriptionCocktail from './components/DescriptionCocktail';
 import DiscoverCocktailResults from './pages/DiscoverCocktailResults.jsx';
 import SearchCocktail from './pages/SearchCocktail.jsx';
+import DescriptionCocktail from './components/DescriptionCocktail.jsx';
 
 function App() {
   return (
