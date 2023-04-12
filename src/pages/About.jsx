@@ -14,7 +14,7 @@ const About = () => {
           <Flex direction='column'>
             <Center>
               <Heading as='h1' pt='10rem'>
-                <Text mx='5rem' fontSize='clamp(20%, 6vh, 90%)'>
+                <Text mx='5rem' align='center' mt={5} color='secondary.700' textShadow='1px 2px #e4686f'>
                   {"About The Mixer's Lounge"}
                 </Text>
               </Heading>
