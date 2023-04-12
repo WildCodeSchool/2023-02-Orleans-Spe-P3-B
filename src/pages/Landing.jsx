@@ -1,7 +1,5 @@
-import { Box, Button, Center, Container, Flex, Grid, GridItem, Heading, Hide, Image, Text, Wrap } from '@chakra-ui/react';
-import cocktailLanding from '../assets/images/cocktail-landing.jpeg';
-import cocktailLanding2 from '../assets/images/cocktail-landing2.jpeg';
-import cocktailLanding3 from '../assets/images/cocktail-landing3.jpeg';
+import { Box, Button, Center, Heading, Text } from '@chakra-ui/react';
+
 import { useNavigate } from 'react-router-dom';
 
 const Landing = () => {
@@ -12,7 +10,7 @@ const Landing = () => {
   };
   return (
     <>
-      <Box pt='3rem' pb='8rem'>
+      <Box pt='3rem' pb='5rem'>
         <Center>
           <Heading as='h1' color='light.400' fontSize={'clamp(2rem, 3vw, 5rem)'} textShadow='1px 1px #ff0000'>
             {"The Mixer's Lounge"}
@@ -21,7 +19,7 @@ const Landing = () => {
       </Box>
 
       <Box>
-        <Center pt='12rem'>
+        <Center pt={{ base: '5rem', lg: '7rem' }}>
           <Text fontSize={'clamp(2rem, 3vw, 5rem)'} color='light.400'>
             {'Find your'}
           </Text>
