@@ -5,27 +5,27 @@ import cocktailDbLogo from '../assets/images/logo-cocktail-api.png';
 
 const About = () => {
   return (
-    <Container maxW={{ lg: '100%', md: '80%' }} pt='5rem'>
-      <Grid maxH='10rem' templateRows='1fr' templateColumns={{ base: '1fr', lg: 'repeat(2, 1fr)' }}>
+    <Container maxW={{ lg: '100%', md: '80%' }} pt='2rem'>
+      <Grid maxH='8rem' templateRows='1fr' templateColumns={{ base: '1fr', lg: 'repeat(2, 1fr)' }}>
         <GridItem display={{ base: 'none', lg: 'block' }} colSpan={1} borderLeftRadius='5px'>
-          <Image display={{ base: 'none', lg: 'block' }} src={cocktail} boxSize='80rem' borderLeftRadius='5px' />
+          <Image display={{ base: 'none', lg: 'block' }} src={cocktail} boxSize='60rem' borderLeftRadius='5px' />
         </GridItem>
         <GridItem colSpan={1} bg='light.400' borderLeftRadius={{ base: '5px', lg: '0px' }} borderRightRadius='5px'>
           <Flex direction='column'>
             <Center>
-              <Heading as='h1' pt='10rem'>
+              <Heading as='h1' pt='6rem'>
                 <Text mx='5rem' fontSize='clamp(20%, 6vh, 90%)'>
                   {"About The Mixer's Lounge"}
                 </Text>
               </Heading>
             </Center>
-            <Box mx='2rem' pt='8rem'>
+            <Box mx='2rem' pt='6rem'>
               <Text>
                 {
                   "The Mixer's Lounge is a site who you can research cocktails, but also, be surprised by the choice of a cocktail you don't even know yet. The chances to find a new cocktail who will suit you are incredible, so let yourself be carried away. I don't know what to write anymore and there is no reason to continue reading, so you have to stop reading, there is really nothing more interesting to read. Really. Stop. It's over."
                 }
               </Text>
-              <Box pt='15rem'>
+              <Box pt='8rem'>
                 <Center>
                   <Text>{'A site created by :'}</Text>
                 </Center>
@@ -36,7 +36,7 @@ const About = () => {
                         bg='light.50'
                         borderRadius='lg'
                         backdropFilter='saturate(200%) blur(16px)'
-                        mt={5}
+                        mt={8}
                         boxShadow='md'
                         as={Link}
                         href='https://github.com/Chloebert'
@@ -52,7 +52,7 @@ const About = () => {
                         bg='light.50'
                         borderRadius='lg'
                         backdropFilter='saturate(200%) blur(16px)'
-                        mt={5}
+                        mt={8}
                         boxShadow='md'
                         as={Link}
                         href='https://github.com/VioletaBD'
@@ -68,7 +68,7 @@ const About = () => {
                         bg='light.50'
                         borderRadius='lg'
                         backdropFilter='saturate(200%) blur(16px)'
-                        mt={5}
+                        mt={8}
                         boxShadow='md'
                         as={Link}
                         href='https://github.com/Ga-Mikael'
@@ -87,7 +87,7 @@ const About = () => {
                     <Center>
                       <LinkBox>
                         <LinkOverlay href='https://www.thecocktaildb.com/'>
-                          <Image pt='1rem' pb='2rem' src={cocktailDbLogo} />
+                          <Image pt='2rem' pb='2rem' src={cocktailDbLogo} />
                         </LinkOverlay>
                       </LinkBox>
                     </Center>
