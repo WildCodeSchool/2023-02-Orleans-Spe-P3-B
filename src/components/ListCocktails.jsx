@@ -25,11 +25,13 @@ const ListCocktails = () => {
 
   useEffect(() => {
     const abortController = new AbortController();
-    fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${ingredient}`, {
-      signal: abortController.signal,
-    })
-      .then(res => res.json())
-      .then(data => setCocktails(data.drinks));
+    if (ingredient) {
+      fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${ingredient}`, {
+        signal: abortController.signal,
+      })
+        .then(res => res.json())
+        .then(data => setCocktails(data.drinks));
+    }
     return () => {
       abortController.abort();
     };
@@ -37,11 +39,13 @@ const ListCocktails = () => {
 
   useEffect(() => {
     const abortController = new AbortController();
-    fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=${isAlcoholic}`, {
-      signal: abortController.signal,
-    })
-      .then(res => res.json())
-      .then(data => setCocktails(data.drinks));
+    if (isAlcoholic) {
+      fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=${isAlcoholic}`, {
+        signal: abortController.signal,
+      })
+        .then(res => res.json())
+        .then(data => setCocktails(data.drinks));
+    }
     return () => {
       abortController.abort();
     };
@@ -49,11 +53,13 @@ const ListCocktails = () => {
 
   useEffect(() => {
     const abortController = new AbortController();
-    fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=${category}`, {
-      signal: abortController.signal,
-    })
-      .then(res => res.json())
-      .then(data => setCocktails(data.drinks));
+    if (category) {
+      fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=${category}`, {
+        signal: abortController.signal,
+      })
+        .then(res => res.json())
+        .then(data => setCocktails(data.drinks));
+    }
     return () => {
       abortController.abort();
     };
@@ -61,11 +67,13 @@ const ListCocktails = () => {
 
   useEffect(() => {
     const abortController = new AbortController();
-    fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?g=${glass}`, {
-      signal: abortController.signal,
-    })
-      .then(res => res.json())
-      .then(data => setCocktails(data.drinks));
+    if (glass) {
+      fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?g=${glass}`, {
+        signal: abortController.signal,
+      })
+        .then(res => res.json())
+        .then(data => setCocktails(data.drinks));
+    }
     return () => {
       abortController.abort();
     };
