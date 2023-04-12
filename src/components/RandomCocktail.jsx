@@ -20,6 +20,9 @@ const RandomCocktail = () => {
   }, []);
 
   const ingredients = [drink.strAlcoholic, drink.strIngredient1];
+  const cocktailDetail = e => {
+    setSelectedCocktailDetails(e.target.value);
+  };
 
   return (
     <div>
@@ -64,8 +67,8 @@ const RandomCocktail = () => {
                 </HStack>
               </Center>
               <Center>
-                <Button size='sm' mt={2} width='75%' variant='cardButton'>
-                  <Link to='/description/:cocktail'>Have a look</Link>
+                <Button size='sm' mt={2} width='75%' variant='cardButton' id='cocktailDetail' onClick={cocktailDetail}>
+                  <Link to={'/description/${cocktail.id}'}>{'Have a look'}</Link>
                 </Button>
               </Center>
             </Stack>
