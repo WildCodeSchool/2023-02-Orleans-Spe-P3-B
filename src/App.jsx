@@ -8,6 +8,7 @@ import LegalNotice from './components/LegalNotice';
 import Landing from './pages/Landing.jsx';
 import WithoutNavBar from './WithoutNavBar.jsx';
 import WithNavBar from './WithNavBar.jsx';
+import DescriptionCocktail from './components/DescriptionCocktail';
 import DiscoverCocktailResults from './pages/DiscoverCocktailResults.jsx';
 
 function App() {
