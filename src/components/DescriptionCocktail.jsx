@@ -5,12 +5,17 @@ import { useParams } from 'react-router-dom';
 const DescriptionCocktail = () => {
   const [cocktail, setCocktail] = useState(null);
   const params = useParams();
-  const { drinkId } = params();
+  const { drinkId } = params;
   useEffect(() => {
+    const controller = new AbortController();
+    const signal = controller.signal;
     if (drinkId) {
-      fetch(`https:\\www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${drinkId}`)
+      fetch(`https:\\www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${drinkId}`, { signal: signal })
         .then(response => response.json())
         .then(data => setCocktail(data.drinks[0]));
+      return () => {
+        controller.abort();
+      };
     }
   }, [params]);
   if (!cocktail) return null;
@@ -38,24 +43,24 @@ const DescriptionCocktail = () => {
               {'Ingredients :'}
             </Text>
             <Text fontSize='2xl' color={'secondary.600'}>
-              <p>
+              <Text>
                 {cocktail.strIngredient1} {cocktail.strMeasure1}
-              </p>
-              <p>
+              </Text>
+              <Text>
                 {cocktail.strIngredient2} {cocktail.strMeasure2}
-              </p>
-              <p>
+              </Text>
+              <Text>
                 {cocktail.strIngredient3} {cocktail.strMeasure3}
-              </p>
-              <p>
+              </Text>
+              <Text>
                 {cocktail.strIngredient4} {cocktail.strMeasure4}
-              </p>
-              <p>
+              </Text>
+              <Text>
                 {cocktail.strIngredient5} {cocktail.strMeasure5}
-              </p>
-              <p>
+              </Text>
+              <Text>
                 {cocktail.strIngredient6} {cocktail.strMeasure6}
-              </p>
+              </Text>
             </Text>
             <Spacer />
             <Text fontSize='xl' color={'light.400'} mt={'6'}>
