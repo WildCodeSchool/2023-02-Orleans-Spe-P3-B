@@ -21,9 +21,11 @@ function App() {
         <Route element={<WithNavBar />}>
           <Route path='/home' element={<Home />} />
           <Route path='/the-cocktails' element={<CocktailsList />} />
-          <Route path='/find-your-cocktail' element={<FindCocktail />} />
           <Route path='/about' element={<About />} />
           <Route path='/legal-notice' element={<LegalNotice />} />
+          <Route path='/description/:drinkId' element={<DescriptionCocktail />} />
+          <Route path='/discover-a-cocktail' element={<DiscoverCocktail />} />
+          <Route path='/discover-a-cocktail-results/:cocktailId' element={<DiscoverCocktailResults />} />
         </Route>
       </Routes>
     </>
