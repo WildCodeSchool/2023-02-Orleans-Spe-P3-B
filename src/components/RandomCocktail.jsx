@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Card, CardBody, Button, Heading, Stack, Image, HStack, Tag, TagLabel, Container, Collapse, Center } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 
 const RandomCocktail = () => {
   const [drink, setDrink] = useState('');
   const [isShown, setIsShown] = useState(false);
-
   useEffect(() => {
     const controller = new AbortController();
     const signal = controller.signal;
@@ -36,7 +36,7 @@ const RandomCocktail = () => {
             width='94%'
             height='25%'
             paddingTop='13%'
-            bgGradient='linear(rgba(255, 114, 75, 0),rgba(1,1,1, 0.2),rgba(1,1,1, 0.6),rgba(1,1,1, 1))'
+            bgGradient='linear(rgba(255, 114, 75, 0),rgba(1,1,1, 0.2),rgba(1,1,1, 0.5),rgba(1,1,1,0.7))'
             position='absolute'
             bottom='3%'
             left='3%'
@@ -63,8 +63,8 @@ const RandomCocktail = () => {
                 </HStack>
               </Center>
               <Center>
-                <Button size='sm' mt={2} width='75%' variant='cardButton'>
-                  Have a look
+                <Button size='sm' mt={2} width='75%' variant='cardButton' id='cocktailDetail'>
+                  <Link to={`/description/${drink.idDrink}`}>{'Have a look'}</Link>
                 </Button>
               </Center>
             </Stack>

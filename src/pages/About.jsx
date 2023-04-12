@@ -13,7 +13,7 @@ const About = () => {
         <GridItem colSpan={1} bg='light.400' borderLeftRadius={{ base: '5px', lg: '0px' }} borderRightRadius='5px'>
           <Flex direction='column'>
             <Center>
-              <Heading fontSize='4xl' pt='6rem'>
+              <Heading as='h1' pt='6rem'>
                 <Text mx='5rem' fontSize='clamp(20%, 6vh, 90%)'>
                   {"About The Mixer's Lounge"}
                 </Text>
