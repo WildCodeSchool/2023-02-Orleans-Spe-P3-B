@@ -14,7 +14,7 @@ const Landing = () => {
     <>
       <Box pt='3rem' pb='8rem'>
         <Center>
-          <Heading as='h1' color='light.400' textShadow='1px 1px #ff0000'>
+          <Heading as='h1' color='light.400' fontSize={'clamp(2rem, 3vw, 5rem)'} textShadow='1px 1px #ff0000'>
             {"The Mixer's Lounge"}
           </Heading>
         </Center>
@@ -22,11 +22,10 @@ const Landing = () => {
 
       <Box>
         <Center pt='12rem'>
-
-          <Text fontSize={{}} color='light.400'>
+          <Text fontSize={'clamp(2rem, 3vw, 5rem)'} color='light.400'>
             {'Find your'}
           </Text>
-          <Text fontSize='clamp(50px, 10rem, 50px)' color='dark.400' pt='4rem'>
+          <Text fontSize={'clamp(2.5rem, 3vw, 7rem)'} color='dark.400' pt='4rem'>
             {'COCKTAIL'}
           </Text>
         </Center>
