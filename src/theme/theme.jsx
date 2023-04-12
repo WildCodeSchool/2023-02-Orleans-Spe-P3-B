@@ -94,7 +94,9 @@ const styles = {
     },
     body: {
       bgGradient: 'linear(to-b, #FF713D 0%, rgba(255, 91, 111, 0.83) 72.98%, #FFD166 100%)',
+      backgroundAttachment: 'fixed',
       height: '100%',
+      color: 'secondary.700',
     },
   },
 };

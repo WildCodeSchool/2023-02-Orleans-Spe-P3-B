@@ -6,7 +6,7 @@ import About from './pages/About';
 import Home from './pages/Home.jsx';
 import Footer from './components/Footer.jsx';
 import LegalNotice from './components/LegalNotice';
-import SearchCocktail from './pages/SearchCocktail.jsx';
+import DescriptionCocktail from './components/DescriptionCocktail';
 import DiscoverCocktailResults from './pages/DiscoverCocktailResults.jsx';
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
         <Route path='/discover-a-cocktail-results/:cocktailId' element={<DiscoverCocktailResults />} />
         <Route path='/about' element={<About />} />
         <Route path='/legal-notice' element={<LegalNotice />} />
+        <Route path='/description/:drinkId' element={<DescriptionCocktail />} />
       </Routes>
       <Footer />
     </>

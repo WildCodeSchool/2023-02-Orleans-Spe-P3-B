@@ -5,7 +5,7 @@ const RandomCocktailList = () => {
   return (
     <Box>
       <Center>
-        <Heading mt={10} mb={5} as='h1' size='2xl' color='light.200'>
+        <Heading mb={5} as='h2' align='center' mt={10} color='light.200' textShadow='1px 3px #e4686f'>
           Discover new drinks
         </Heading>
       </Center>
