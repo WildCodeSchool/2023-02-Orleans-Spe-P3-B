@@ -29,7 +29,7 @@ const Landing = () => {
         </Center>
         <Center pt='4rem'>
           <Button boxShadow='base' onClick={handleNavigate} borderRadius='10px' maxW='30rem'>
-            {'Enter The Loundge'}
+            {'Enter The Lounge'}
           </Button>
         </Center>
       </Box>
