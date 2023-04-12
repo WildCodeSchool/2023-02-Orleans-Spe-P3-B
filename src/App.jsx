@@ -1,7 +1,6 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import CocktailsList from './pages/CocktailsList';
 import DiscoverCocktail from './pages/DiscoverCocktail.jsx';
 import About from './pages/About';
 import Home from './pages/Home.jsx';
@@ -16,7 +15,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/the-cocktails' element={<CocktailsList />} />
+        <Route path='/the-cocktails' element={<SearchCocktail />} />
         <Route path='/discover-a-cocktail' element={<DiscoverCocktail />} />
         <Route path='/discover-a-cocktail-results/:cocktailId' element={<DiscoverCocktailResults />} />
         <Route path='/about' element={<About />} />
