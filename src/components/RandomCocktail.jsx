@@ -36,7 +36,7 @@ const RandomCocktail = () => {
             width='94%'
             height='25%'
             paddingTop='13%'
-            bgGradient='linear(rgba(255, 114, 75, 0),rgba(1,1,1, 0.2),rgba(1,1,1, 0.6),rgba(1,1,1, 1))'
+            bgGradient='linear(rgba(255, 114, 75, 0),rgba(1,1,1, 0.2),rgba(1,1,1, 0.5),rgba(1,1,1,0.7))'
             position='absolute'
             bottom='3%'
             left='3%'
