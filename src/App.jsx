@@ -1,12 +1,13 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import FindCocktail from './pages/FindCocktails';
+import DiscoverCocktail from './pages/DiscoverCocktail.jsx';
 import About from './pages/About';
 import Home from './pages/Home.jsx';
 import Footer from './components/Footer.jsx';
 import LegalNotice from './components/LegalNotice';
 import SearchCocktail from './pages/SearchCocktail.jsx';
+import DiscoverCocktailResults from './pages/DiscoverCocktailResults.jsx';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/the-cocktails' element={<SearchCocktail />} />
-        <Route path='/find-your-cocktail' element={<FindCocktail />} />
+        <Route path='/discover-a-cocktail' element={<DiscoverCocktail />} />
+        <Route path='/discover-a-cocktail-results/:cocktailId' element={<DiscoverCocktailResults />} />
         <Route path='/about' element={<About />} />
         <Route path='/legal-notice' element={<LegalNotice />} />
       </Routes>
