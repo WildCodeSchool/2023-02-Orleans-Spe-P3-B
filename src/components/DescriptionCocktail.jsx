@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 const DescriptionCocktail = () => {
   const [cocktail, setCocktail] = useState(null);
   const params = useParams();
-  let { drinkId } = useParams();
+  const { drinkId } = params();
   useEffect(() => {
     if (drinkId) {
       fetch(`https:\\www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${drinkId}`)
@@ -35,8 +35,7 @@ const DescriptionCocktail = () => {
               </UnorderedList>
             </Text>
             <Text fontSize='xl' color={'light.400'} mt={'6'} mb={'3'}>
-              {' '}
-              {'Ingredients :'}{' '}
+              {'Ingredients :'}
             </Text>
             <Text fontSize='2xl' color={'secondary.600'}>
               <p>

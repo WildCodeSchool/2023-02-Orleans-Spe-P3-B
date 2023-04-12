@@ -19,9 +19,7 @@ const RandomCocktail = () => {
   }, []);
 
   const ingredients = [drink.strAlcoholic, drink.strIngredient1];
-  /*  const cocktailDetail = () => {
-    setDrinkId(drink.idDrink);
-  };*/
+
   return (
     <div>
       <Card
