@@ -5,6 +5,7 @@ import ListCocktails from '../components/ListCocktails.jsx';
 import { SearchBarProvider } from '../contexts/SearchBarContext.jsx';
 import { FilterSearchProvider } from '../contexts/FilterSearchContext.jsx';
 import { CocktailsListProvider } from '../contexts/CocktailListContext.jsx';
+import imageCocktail from '../assets/images/cara-cara.jpg';
 
 const SearchCocktail = () => {
   return (
@@ -19,7 +20,7 @@ const SearchCocktail = () => {
                     display={{ base: 'none', md: 'block' }}
                     boxSize='full'
                     objectFit='cover'
-                    src='./src/assets/images/cara-cara.jpg'
+                    src={imageCocktail}
                     alt='Picture of an orange cocktail'
                     borderLeftRadius='5'
                   />
