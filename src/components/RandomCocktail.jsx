@@ -64,7 +64,7 @@ const RandomCocktail = () => {
               </Center>
               <Center>
                 <Button size='sm' mt={2} width='75%' variant='cardButton'>
-                  Have a look
+                  {'Have a look'}
                 </Button>
               </Center>
             </Stack>
