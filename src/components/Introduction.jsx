@@ -5,7 +5,7 @@ const Introduction = () => {
   return (
     <Container maxW={{ sm: '90%', lg: '70%' }}>
       <Center>
-        <Heading as='h1' align='center' mt={5} color='light.200' textShadow='1px 3px #e4686f'>
+        <Heading as='h1' size='2xl' align='center' mt={10} mb={14} color='light.200' textShadow='1px 3px #e4686f'>
           {`Welcome to the Mixer's Lounge`}
         </Heading>
       </Center>

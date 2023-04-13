@@ -25,7 +25,7 @@ const About = () => {
                   "The Mixer's Lounge is a site who you can research cocktails, but also, be surprised by the choice of a cocktail you don't even know yet. The chances to find a new cocktail who will suit you are incredible, so let yourself be carried away. I don't know what to write anymore and there is no reason to continue reading, so you have to stop reading, there is really nothing more interesting to read. Really. Stop. It's over."
                 }
               </Text>
-              <Box pt='8rem'>
+              <Box pt='4rem'>
                 <Center>
                   <Text>{'A site created by :'}</Text>
                 </Center>
@@ -87,7 +87,7 @@ const About = () => {
                     <Center>
                       <LinkBox>
                         <LinkOverlay href='https://www.thecocktaildb.com/'>
-                          <Image pt='2rem' pb='2rem' src={cocktailDbLogo} />
+                          <Image pt='2rem' pb='4rem' src={cocktailDbLogo} />
                         </LinkOverlay>
                       </LinkBox>
                     </Center>

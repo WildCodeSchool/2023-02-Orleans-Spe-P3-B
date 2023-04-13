@@ -22,7 +22,7 @@ const DescriptionCocktail = () => {
 
   return (
     <>
-      <Wrap justify='center' spacing='50px' m={'5'}>
+      <Wrap justify='center' m={3} spacing='50px'>
         <WrapItem p={'5'} boxShadow='lg' w='500px' h='auto' borderRadius='lg' bg={'light.50'} backdropFilter='saturate(150%) blur(10px)'>
           <Box justify='center' as='b' p={'4'} position='relative'>
             <Stack divider={<StackDivider />}>

@@ -10,7 +10,7 @@ function BurgerMenu() {
         shadow='md'
         color='secondary.400'
         bg='light.200'
-        m='3'
+        m={4}
         as={IconButton}
         aria-label='Options'
         icon={<HamburgerIcon />}
@@ -22,13 +22,13 @@ function BurgerMenu() {
           <Text ms='3'>{"THE MIXER'S LOUNGE"}</Text>
         </MenuCommand>
         <MenuItem mt='5' bg='light.200'>
-          <NavLink to='/'>{'Home'}</NavLink>
+          <NavLink to='/home'>{'Home'}</NavLink>
         </MenuItem>
         <MenuItem bg='light.200'>
           <NavLink to='/the-cocktails'>{'The Cocktails'}</NavLink>
         </MenuItem>
         <MenuItem bg='light.200'>
-          <NavLink to='/find-your-cocktail'>{'Find Your Cocktail'}</NavLink>
+          <NavLink to='/discover-a-cocktail'>{'Discover a Cocktail'}</NavLink>
         </MenuItem>
         <MenuItem bg='light.200'>
           <NavLink to='/about'>{'About'}</NavLink>

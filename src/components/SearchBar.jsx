@@ -20,11 +20,11 @@ const SearchBar = () => {
       </Center>
 
       <form onSubmit={handleSubmit}>
-        <FormControl>
+        <FormControl mb={{ sm: '4rem', base: '0' }}>
           <Box display='flex' flexDirection='column'>
             <Center>
               <Center>
-                <FormLabel mb='auto' display={{ base: 'none', lg: 'block' }}>
+                <FormLabel m={4} display={{ base: 'none', lg: 'block' }}>
                   {'Search a cocktail'}
                 </FormLabel>
               </Center>

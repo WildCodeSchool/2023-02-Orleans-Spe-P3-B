@@ -1,4 +1,4 @@
-import { Box, Button, Center, Container, Flex, Heading, Image, Text } from '@chakra-ui/react';
+import { Box, Button, Container, Flex, Heading, Image, Text } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 import imageOne from '../assets/images/cocktail-yellow.jpeg';
 
@@ -8,7 +8,7 @@ const QuizHomeSection = () => {
     navigate('/discover-a-cocktail');
   };
   return (
-    <Flex height='100%' width='100%' alignItems='center' direction='column' mt={16}>
+    <Flex height='100%' width='100%' alignItems='center' direction='column' mt='6rem'>
       <Heading as='h1' fontSize='4xl' align='center' mb={5} color='light.200' textShadow='1px 3px #e4686f'>
         {'Discover your new favourite drink !'}
       </Heading>
