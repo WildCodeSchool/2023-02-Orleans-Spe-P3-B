@@ -4,7 +4,7 @@ import { useState } from 'react';
 const CardCocktailList = ({ strDrink, strDrinkThumb }) => {
   const [isShown, setIsShown] = useState(false);
   return (
-    <Box>
+    <Box mb={5}>
       <Card
         role='group'
         onMouseEnter={() => setIsShown(true)}
