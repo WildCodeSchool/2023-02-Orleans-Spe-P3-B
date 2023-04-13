@@ -85,7 +85,7 @@ const About = () => {
                       <Text pt='5rem'>{'With the use of  :'}</Text>
                     </Center>
                     <Center>
-                      <LinkBox>
+                      <LinkBox mb={10}>
                         <LinkOverlay href='https://www.thecocktaildb.com/'>
                           <Image pt='2rem' pb='2rem' src={cocktailDbLogo} />
                         </LinkOverlay>

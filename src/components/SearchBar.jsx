@@ -24,7 +24,7 @@ const SearchBar = () => {
           <Box display='flex' flexDirection='column'>
             <Center>
               <Center>
-                <FormLabel mb='auto' display={{ base: 'none', lg: 'block' }}>
+                <FormLabel m={4} display={{ base: 'none', lg: 'block' }}>
                   {'Search a cocktail'}
                 </FormLabel>
               </Center>
