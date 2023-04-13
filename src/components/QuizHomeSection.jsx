@@ -26,7 +26,6 @@ const QuizHomeSection = () => {
         justifyContent='center'
       >
         <Image
-          display={{ base: 'none' }}
           borderRadius='lg'
           src={imageOne}
           alt='Image of a cocktail'
