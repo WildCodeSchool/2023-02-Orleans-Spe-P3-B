@@ -1,4 +1,4 @@
-import { Box, Button, Container, Flex, Heading, Image, List, ListItem, SimpleGrid, Spacer, Text } from '@chakra-ui/react';
+import { Box, Button, Center, Container, Flex, Heading, Image, List, ListItem, SimpleGrid, Spacer, Text } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import imageOne from '../assets/images/cocktail-pink-transparent.png';
 import { useNavigate } from 'react-router-dom';
@@ -58,56 +58,66 @@ const DiscoverCocktail = () => {
 
   return (
     <Flex height='100%' width='100%' alignItems='center' direction='column'>
-      <Heading as='h1' fontSize='4xl' align='center' mt={5} mb={10} color='light.200' textShadow='1px 3px #e4686f'>
+      <Heading
+        as='h1'
+        fontSize={{ sm: '2xl', md: '4xl', lg: '4xl' }}
+        align='center'
+        mt={5}
+        mb={10}
+        color='light.200'
+        textShadow='1px 3px #e4686f'
+      >
         {'Discover your new favourite drink !'}
       </Heading>
-      <SimpleGrid columns={2} ml={20}>
+      <SimpleGrid columns={{ base: '1', lg: '2' }} mx='5rem'>
         <Box width='100%' display='flex' flexDirection='column'>
-          <Text as='h2' align='center' fontSize='4xl' color='light.200'>
+          <Text as='h2' align='center' fontSize={{ base: '3xl', md: '4xl', lg: '4xl' }} color='light.200'>
             {question}
           </Text>
-          <Container
-            display='flex'
-            alignItems='center'
-            justifyContent=''
-            flexDirection='column'
-            maxW='100%'
-            height='300px'
-            bg='light.50'
-            borderRadius='lg'
-            backdropFilter='saturate(200%) blur(16px)'
-            mt={5}
-            boxShadow='sm'
-            p={0}
-          >
-            <List mt={10} ml={10} mr={10}>
-              {choices.map((choice, index) => (
-                <ListItem
-                  align='center'
-                  key={index}
-                  value={choice}
-                  bg={parseInt(selectedAnswer) === index ? 'secondary.600' : 'secondary.400'}
-                  width='25rem'
-                  borderRadius='lg'
-                  border={parseInt(selectedAnswer) === index ? '1px solid #fff1e8' : ''}
-                  _hover={{ background: 'secondary.600' }}
-                  fontSize='xl'
-                  m={5}
-                  color='light.200'
-                  pl={3}
-                  onClick={() => onAnswerSelected(index)}
-                >
-                  {choice}
-                </ListItem>
-              ))}
-            </List>
-            <Button onClick={handleResultClick} size='md' width='30%' variant='quizzButton'>
-              {'Discover'}
-            </Button>
-          </Container>
+          <Center>
+            <Container
+              display='flex'
+              alignItems='center'
+              justifyContent=''
+              flexDirection='column'
+              maxW='30rem'
+              minW='16rem'
+              maxH='24rem'
+              bg='light.50'
+              borderRadius='lg'
+              backdropFilter='saturate(200%) blur(16px)'
+              mt={5}
+              boxShadow='sm'
+            >
+              <List>
+                {choices.map((choice, index) => (
+                  <ListItem
+                    align='center'
+                    key={index}
+                    value={choice}
+                    bg={parseInt(selectedAnswer) === index ? 'secondary.600' : 'secondary.400'}
+                    px='5rem'
+                    borderRadius='lg'
+                    border={parseInt(selectedAnswer) === index ? '1px solid #fff1e8' : ''}
+                    _hover={{ background: 'secondary.600' }}
+                    fontSize='xl'
+                    my='2rem'
+                    mx='1rem'
+                    color='light.200'
+                    onClick={() => onAnswerSelected(index)}
+                  >
+                    {choice}
+                  </ListItem>
+                ))}
+              </List>
+              <Button onClick={handleResultClick} size='md' width='30%' variant='quizzButton' mb='2rem'>
+                {'Discover'}
+              </Button>
+            </Container>
+          </Center>
         </Box>
         <Box ml={40}>
-          <Image src={imageOne} height='60vh' width='auto' />
+          <Image display={{ base: 'none', lg: 'block' }} src={imageOne} height='60vh' width='auto' />
         </Box>
       </SimpleGrid>
     </Flex>
