@@ -1,5 +1,6 @@
 import { Box, Button, Center, Container, Flex, Heading, Image, Text } from '@chakra-ui/react';
 import { NavLink } from 'react-router-dom';
+import cocktail from '/src/assets/images/cocktail-blue.jpeg';
 const SearchSection = () => {
   return (
     <>
@@ -25,7 +26,7 @@ const SearchSection = () => {
             </Box>
             <Image
               borderRightRadius='5px'
-              src='./src/assets/images/cocktail-blue.jpeg'
+              src={cocktail}
               width={{ base: '100%', lg: 'auto' }}
               height={{ base: '15rem', lg: '20rem' }}
               objectFit='cover'
