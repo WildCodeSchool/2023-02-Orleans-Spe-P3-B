@@ -10,7 +10,7 @@ const DescriptionCocktail = () => {
     const controller = new AbortController();
     const signal = controller.signal;
     if (drinkId) {
-      fetch(`https:\\www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${drinkId}`, { signal: signal })
+      fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${drinkId}`, { signal: signal })
         .then(response => response.json())
         .then(data => setCocktail(data.drinks[0]));
       return () => {
