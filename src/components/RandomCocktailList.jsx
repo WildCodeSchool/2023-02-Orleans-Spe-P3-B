@@ -1,5 +1,5 @@
 import RandomCocktail from './RandomCocktail.jsx';
-import { Box, Center, Container, Heading, SimpleGrid } from '@chakra-ui/react';
+import { Box, Center, Heading, SimpleGrid } from '@chakra-ui/react';
 
 const RandomCocktailList = () => {
   return (

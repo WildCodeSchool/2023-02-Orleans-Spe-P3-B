@@ -1,6 +1,5 @@
 import { Box, Button, Center, Container, Flex, Heading, Image, Text } from '@chakra-ui/react';
 import { NavLink } from 'react-router-dom';
-import introductionCocktail from '../assets/intrococktail.jpeg';
 const SearchSection = () => {
   return (
     <>

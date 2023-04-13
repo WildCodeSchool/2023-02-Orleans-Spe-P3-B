@@ -1,4 +1,4 @@
-import { Box, Button, Center, Container, Flex, Heading, Image, Text } from '@chakra-ui/react';
+import { Box, Button, Container, Flex, Heading, Image, Text } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 import imageOne from '../assets/images/cocktail-yellow.jpeg';
 

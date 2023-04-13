@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { Box, Button, Container, Flex, Heading, HStack, Image, Tag, TagLabel, Text } from '@chakra-ui/react';
+import { Box, Button, Flex, Heading, Image, Tag, TagLabel, Text } from '@chakra-ui/react';
 
 const DiscoverCocktailResults = () => {
   const { cocktailId } = useParams();

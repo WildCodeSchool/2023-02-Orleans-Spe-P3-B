@@ -1,4 +1,4 @@
-import { Box, Button, Center, Container, Flex, Heading, Image, List, ListItem, SimpleGrid, Spacer, Text } from '@chakra-ui/react';
+import { Box, Button, Center, Container, Flex, Heading, Image, List, ListItem, SimpleGrid, Text } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import imageOne from '../assets/images/cocktail-pink-transparent.png';
 import { useNavigate } from 'react-router-dom';
