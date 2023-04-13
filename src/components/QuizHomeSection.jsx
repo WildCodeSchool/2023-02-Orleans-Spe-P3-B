@@ -8,7 +8,7 @@ const QuizHomeSection = () => {
     navigate('/discover-a-cocktail');
   };
   return (
-    <Flex height='100%' width='100%' alignItems='center' direction='column' mt={16}>
+    <Flex height='100%' width='100%' alignItems='center' direction='column' mt='6rem'>
       <Heading as='h1' fontSize='4xl' align='center' mb={5} color='light.200' textShadow='1px 3px #e4686f'>
         {'Discover your new favourite drink !'}
       </Heading>

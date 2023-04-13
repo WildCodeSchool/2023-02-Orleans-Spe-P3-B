@@ -3,7 +3,7 @@ import { Box, Center, Container, Heading, SimpleGrid } from '@chakra-ui/react';
 
 const RandomCocktailList = () => {
   return (
-    <Box mt={16}>
+    <Box mt='6rem'>
       <Center>
         <Heading mb={5} as='h2' align='center' color='light.200' textShadow='1px 3px #e4686f'>
           Discover new drinks

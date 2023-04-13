@@ -55,6 +55,7 @@ const DiscoverCocktailResults = () => {
         p={0}
         direction={{ base: 'column', lg: 'row' }}
         alignItems='center'
+        mb='5rem'
       >
         <Image
           borderRadius='lg'
@@ -97,7 +98,7 @@ const DiscoverCocktailResults = () => {
               m='auto'
               mt={5}
               size='md'
-              width={{ base: '50%', lg: '20%' }}
+              width={{ base: '100%', lg: '20%' }}
               variant='quizzButton'
             >
               {'See more'}
