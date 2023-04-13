@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Card, CardBody, Button, Heading, Stack, Image, HStack, Tag, TagLabel, Container, Collapse, Center } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
-
 const RandomCocktail = () => {
   const [drink, setDrink] = useState('');
   const [isShown, setIsShown] = useState(false);
+
   useEffect(() => {
     const controller = new AbortController();
     const signal = controller.signal;
