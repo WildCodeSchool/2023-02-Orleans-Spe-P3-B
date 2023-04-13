@@ -10,7 +10,7 @@ function BurgerMenu() {
         shadow='md'
         color='secondary.400'
         bg='light.200'
-        m='3'
+        m={4}
         as={IconButton}
         aria-label='Options'
         icon={<HamburgerIcon />}
