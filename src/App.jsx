@@ -8,6 +8,7 @@ import Footer from './components/Footer.jsx';
 import LegalNotice from './components/LegalNotice';
 import DescriptionCocktail from './components/DescriptionCocktail';
 import DiscoverCocktailResults from './pages/DiscoverCocktailResults.jsx';
+import SearchCocktail from './pages/SearchCocktail.jsx';
 
 function App() {
   return (
