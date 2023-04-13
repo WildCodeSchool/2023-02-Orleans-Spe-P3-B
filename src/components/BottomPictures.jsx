@@ -4,7 +4,7 @@ import blueCocktail from '../assets/cocktailblue.jpg';
 
 const BottomPictures = () => {
   return (
-    <Box mt={16}>
+    <Box mt='6rem'>
       <SimpleGrid columns={{ base: 1, md: 2 }}>
         <Image
           borderRight={{ md: '4px solid white', base: '' }}
