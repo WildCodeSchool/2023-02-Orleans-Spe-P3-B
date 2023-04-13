@@ -4,9 +4,9 @@ import introductionCocktail from '../assets/intrococktail.jpeg';
 const SearchSection = () => {
   return (
     <>
-      <Container maxW={{ sm: '90%', lg: '70%' }} pt='5rem'>
+      <Container maxW={{ sm: '90%', lg: '70%' }} mt={16}>
         <Center>
-          <Heading as='h2' align='center' mt={5} color='light.200' textShadow='1px 3px #e4686f'>
+          <Heading as='h2' align='center' color='light.200' textShadow='1px 3px #e4686f'>
             {`You want to find a cocktail ?`}
           </Heading>
         </Center>

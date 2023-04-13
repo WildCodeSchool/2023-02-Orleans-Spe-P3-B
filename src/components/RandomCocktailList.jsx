@@ -3,9 +3,9 @@ import { Box, Center, Container, Heading, SimpleGrid } from '@chakra-ui/react';
 
 const RandomCocktailList = () => {
   return (
-    <Box>
+    <Box mt={16}>
       <Center>
-        <Heading mb={5} as='h2' align='center' mt={10} color='light.200' textShadow='1px 3px #e4686f'>
+        <Heading mb={5} as='h2' align='center' color='light.200' textShadow='1px 3px #e4686f'>
           Discover new drinks
         </Heading>
       </Center>
