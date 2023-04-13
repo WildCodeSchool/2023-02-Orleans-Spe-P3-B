@@ -20,7 +20,7 @@ const SearchBar = () => {
       </Center>
 
       <form onSubmit={handleSubmit}>
-        <FormControl>
+        <FormControl mb={{ sm: '4rem', base: '0' }}>
           <Box display='flex' flexDirection='column'>
             <Center>
               <Center>
