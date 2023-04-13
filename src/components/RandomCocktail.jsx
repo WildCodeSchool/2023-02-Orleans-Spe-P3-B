@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Card, CardBody, Button, Heading, Stack, Image, HStack, Tag, TagLabel, Container, Collapse, Center } from '@chakra-ui/react';
+import { Card, CardBody, Button, Heading, Stack, Image, HStack, Tag, TagLabel, Container, Collapse, Center, Link } from '@chakra-ui/react';
 
 const RandomCocktail = () => {
   const [drink, setDrink] = useState('');
@@ -63,8 +63,8 @@ const RandomCocktail = () => {
                 </HStack>
               </Center>
               <Center>
-                <Button size='sm' mt={2} width='75%' variant='cardButton'>
-                  {'Have a look'}
+                <Button size='sm' mt={2} width='75%' variant='cardButton' id='cocktailDetail'>
+                  <Link to={`/description/${drink.idDrink}`}>{'Have a look'}</Link>
                 </Button>
               </Center>
             </Stack>
