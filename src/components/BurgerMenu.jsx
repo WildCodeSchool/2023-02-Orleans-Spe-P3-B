@@ -28,7 +28,7 @@ function BurgerMenu() {
           <NavLink to='/the-cocktails'>{'The Cocktails'}</NavLink>
         </MenuItem>
         <MenuItem bg='light.200'>
-          <NavLink to='/find-your-cocktail'>{'Find Your Cocktail'}</NavLink>
+          <NavLink to='/discover-a-cocktail'>{'Discover a Cocktail'}</NavLink>
         </MenuItem>
         <MenuItem bg='light.200'>
           <NavLink to='/about'>{'About'}</NavLink>
