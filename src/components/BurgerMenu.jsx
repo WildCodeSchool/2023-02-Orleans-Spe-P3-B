@@ -22,7 +22,7 @@ function BurgerMenu() {
           <Text ms='3'>{"THE MIXER'S LOUNGE"}</Text>
         </MenuCommand>
         <MenuItem mt='5' bg='light.200'>
-          <NavLink to='/'>{'Home'}</NavLink>
+          <NavLink to='/home'>{'Home'}</NavLink>
         </MenuItem>
         <MenuItem bg='light.200'>
           <NavLink to='/the-cocktails'>{'The Cocktails'}</NavLink>
