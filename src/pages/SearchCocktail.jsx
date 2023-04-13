@@ -12,7 +12,7 @@ const SearchCocktail = () => {
     <>
       <SearchBarProvider>
         <FilterSearchProvider>
-          <Box bg='light.300' h='100vh' pt={20}>
+          <Box bg='light.300' h='100vh' pt={19}>
             <Container maxW='full'>
               <Grid h='700px' templateRows='repeat(3, 1fr)' templateColumns={{ sm: '1fr', lg: 'repeat(5, 1fr)' }}>
                 <GridItem display={{ base: 'none', md: 'block' }} rowSpan={2} colSpan={2} borderLeftRadius='5'>
@@ -37,7 +37,7 @@ const SearchCocktail = () => {
             </Container>
             <CocktailsListProvider>
               <Box bg='light.300'>
-                <Container maxW={{ sm: '50%', md: '50%', lg: '100%' }} pt='10rem'>
+                <Container maxW={{ sm: '50%', md: '50%', lg: '100%' }} pt='1rem'>
                   <ListCocktails />
                 </Container>
               </Box>
