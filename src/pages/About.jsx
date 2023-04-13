@@ -5,10 +5,10 @@ import cocktailDbLogo from '../assets/images/logo-cocktail-api.png';
 
 const About = () => {
   return (
-    <Container maxW={{ lg: '90%', md: '80%' }} pt='2rem'>
+    <Container maxW={{ lg: '100%', md: '80%' }} pt='2rem'>
       <Grid maxH='8rem' templateRows='1fr' templateColumns={{ base: '1fr', lg: 'repeat(2, 1fr)' }}>
         <GridItem display={{ base: 'none', lg: 'block' }} colSpan={1} borderLeftRadius='5px'>
-          <Image display={{ base: 'none', lg: 'block' }} src={cocktail} boxSize='50rem' borderLeftRadius='5px' />
+          <Image display={{ base: 'none', lg: 'block' }} src={cocktail} boxSize='60rem' borderLeftRadius='5px' />
         </GridItem>
         <GridItem colSpan={1} bg='light.400' borderLeftRadius={{ base: '5px', lg: '0px' }} borderRightRadius='5px'>
           <Flex direction='column'>
@@ -87,7 +87,7 @@ const About = () => {
                     <Center>
                       <LinkBox>
                         <LinkOverlay href='https://www.thecocktaildb.com/'>
-                          <Image pt='2rem' pb='2rem' src={cocktailDbLogo} />
+                          <Image pt='2rem' pb='4rem' src={cocktailDbLogo} />
                         </LinkOverlay>
                       </LinkBox>
                     </Center>
